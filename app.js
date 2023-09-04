@@ -23,9 +23,9 @@ const options = {
 };
 
 const songs = songDetails.map(song => {
-    return song.songName.replace(/[ ()-]/g, '_')
+    return song.songName.replace(/[ :&.,()-]/g, '_')
 })
-// console.log(songs)
+console.log(songs)
 
 
 url_Arrays.forEach((url, index) => {
